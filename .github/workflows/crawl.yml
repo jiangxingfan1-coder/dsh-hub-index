@@ -1,0 +1,37 @@
+name: weekly-topic-crawl
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # 每周一 03:00 UTC
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm install
+      - name: Crawl topic:dsh-plugin into drafts/
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/crawl-topic.mjs 50
+      - name: Open PR if new drafts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$(git status --porcelain drafts/)" ]; then
+            BRANCH="crawl/$(date +%Y%m%d)"
+            git config user.name "hub-crawler[bot]"
+            git config user.email "actions@users.noreply.github.com"
+            git checkout -b "$BRANCH"
+            git add drafts/
+            git commit -m "crawl: new topic:dsh-plugin drafts $(date +%F) (human vetting required before entries/)"
+            git push -u origin "$BRANCH"
+            gh pr create --title "Weekly crawl drafts $(date +%F)" \
+              --body "自动爬取的新草稿——**人工过目后**移入 entries/（策展纪律：不自动入库）。" || true
+          else
+            echo "no new drafts"
+          fi
