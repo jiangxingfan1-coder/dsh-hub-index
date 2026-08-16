@@ -1,0 +1,19 @@
+kind: plugin
+name: dsh-anchored-standard
+description: "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then
+  full Standard tools (Project2 98/99)"
+install: github:xiaobright/dsh-anchored-standard
+source:
+  repo: https://github.com/xiaobright/dsh-anchored-standard
+  npm: null
+  discussion: null
+publisher:
+  github: xiaobright
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★2509，星数仅记录不进信任面）；已人工过目 2026-08-16；install/描述待深核；两相位
+  preset——与 super-fast compose 同赛道

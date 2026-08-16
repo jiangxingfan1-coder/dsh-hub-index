@@ -1,6 +1,29 @@
 {
- "generated": "2026-08-16T06:59:56.040Z",
+ "generated": "2026-08-16T07:02:57.850Z",
  "entries": [
+  {
+   "kind": "app",
+   "name": "deepseek-harness-desktop",
+   "description": "为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案",
+   "install": "见仓库",
+   "source": {
+    "repo": "https://github.com/anywhere-labs/deepseek-harness-desktop",
+    "npm": null,
+    "discussion": null
+   },
+   "publisher": {
+    "github": "anywhere-labs"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "github-topic-crawl",
+    "scanned": false
+   },
+   "notes": "爬取自 topic:dsh-plugin（★7059，星数仅记录不进信任面）；已人工过目 2026-08-16；install/描述待深核",
+   "_file": "entries/plugins/deepseek-harness-desktop.yml"
+  },
   {
    "kind": "plugin",
    "name": "deepseek-harness-remote",
@@ -26,6 +49,29 @@
   },
   {
    "kind": "plugin",
+   "name": "dsh-anchored-standard",
+   "description": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)",
+   "install": "github:xiaobright/dsh-anchored-standard",
+   "source": {
+    "repo": "https://github.com/xiaobright/dsh-anchored-standard",
+    "npm": null,
+    "discussion": null
+   },
+   "publisher": {
+    "github": "xiaobright"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "github-topic-crawl",
+    "scanned": false
+   },
+   "notes": "爬取自 topic:dsh-plugin（★2509，星数仅记录不进信任面）；已人工过目 2026-08-16；install/描述待深核；两相位 preset——与 super-fast compose 同赛道",
+   "_file": "entries/plugins/dsh-anchored-standard.yml"
+  },
+  {
+   "kind": "plugin",
    "name": "dsh-archived-chats",
    "description": "Settings 里的归档会话管理页：按工作区分组、可搜索过滤、单条/整组恢复即时回侧栏、真·原地删除（无需重启）。",
    "install": "github:Ultronen/dsh-archived-chats",
@@ -45,6 +91,29 @@
     "scanned": false
    },
    "_file": "entries/plugins/dsh-archived-chats.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-better-sidebar",
+   "description": "一个侧边栏的完整工作台，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/Git/子代理",
+   "install": "github:omdsh-dev/DSH-better-sidebar",
+   "source": {
+    "repo": "https://github.com/omdsh-dev/DSH-better-sidebar",
+    "npm": null,
+    "discussion": null
+   },
+   "publisher": {
+    "github": "omdsh-dev"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "github-topic-crawl",
+    "scanned": false
+   },
+   "notes": "爬取自 topic:dsh-plugin（★1399，星数仅记录不进信任面）；已人工过目 2026-08-16；install/描述待深核",
+   "_file": "entries/plugins/dsh-better-sidebar.yml"
   },
   {
    "kind": "plugin",
@@ -407,6 +476,29 @@
    "_file": "entries/plugins/dsh-tool-diagnose.yml"
   },
   {
+   "kind": "plugin",
+   "name": "dsh-tui",
+   "description": "DSH 官方公众号收录的 TUI 补位插件：Claude Code 风，鲸鱼顶栏/实时状态/流式思考/双击 Esc 回滚/上下文进度+TPS。npm 一键装。  DSH official WeChat featured TUI plugin — Claude Code style: whale bar, live status, streaming thoughts, double-Esc rollback, context bar + TPS. npm one-click.",
+   "install": "github:ccch1mneyyy/dsh-TUI",
+   "source": {
+    "repo": "https://github.com/ccch1mneyyy/dsh-TUI",
+    "npm": null,
+    "discussion": null
+   },
+   "publisher": {
+    "github": "ccch1mneyyy"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "github-topic-crawl",
+    "scanned": false
+   },
+   "notes": "爬取自 topic:dsh-plugin（★1361，星数仅记录不进信任面）；已人工过目 2026-08-16；install/描述待深核",
+   "_file": "entries/plugins/dsh-tui.yml"
+  },
+  {
    "trust": "unreviewed",
    "provenance": {
     "addedBy": "jiangxingfan1-coder",
@@ -454,6 +546,29 @@
   },
   {
    "kind": "plugin",
+   "name": "dsh-web-ui",
+   "description": "Plugin and skin collection for DeepSeek Harness (DSH) Web UI - task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and skin center.",
+   "install": "github:zhu1090093659/dsh-web-ui",
+   "source": {
+    "repo": "https://github.com/zhu1090093659/dsh-web-ui",
+    "npm": null,
+    "discussion": null
+   },
+   "publisher": {
+    "github": "zhu1090093659"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "github-topic-crawl",
+    "scanned": false
+   },
+   "notes": "爬取自 topic:dsh-plugin（★2934，星数仅记录不进信任面）；已人工过目 2026-08-16；install/描述待深核",
+   "_file": "entries/plugins/dsh-web-ui.yml"
+  },
+  {
+   "kind": "plugin",
    "name": "dsh-wechat-mp",
    "description": "Markdown 进、排好版的公众号草稿出：CSS 逐条内联（编辑器只认 style 属性）、本地图片走微信上传接口换 mmbiz 链接，四个工具含只读渲染。",
    "install": "dsh-wechat-mp",
@@ -498,6 +613,29 @@
    "_file": "entries/plugins/dsh-whale-musume.yml"
   },
   {
+   "kind": "plugin",
+   "name": "modlens",
+   "description": "The first vision plugin for DeepSeek Harness, and the vision bridge for every text-only coding agent. Paste an image, get structured JSON evidence (OCR, layout, semantics). | 全网第一个 DeepSeek Harness 视觉插件，为 DeepSeek、GLM 等纯文本模型外挂视觉能力，粘贴图片即得结构化 JSON 证据（OCR、版面、语义）。",
+   "install": "github:liustack/modlens",
+   "source": {
+    "repo": "https://github.com/liustack/modlens",
+    "npm": null,
+    "discussion": null
+   },
+   "publisher": {
+    "github": "liustack"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "github-topic-crawl",
+    "scanned": false
+   },
+   "notes": "爬取自 topic:dsh-plugin（★2058，星数仅记录不进信任面）；已人工过目 2026-08-16；install/描述待深核",
+   "_file": "entries/plugins/modlens.yml"
+  },
+  {
    "kind": "app",
    "name": "moodball-app",
    "description": "macOS 原生桌宠（SwiftUI，14+）：悬浮呼吸球随 Agent 状态变色（思考绿/工具紫/待授权黄/提问粉/完成青/出错红），可拖动置顶、漫画气泡，配 dsh-moodball-status 使用。",
@@ -518,6 +656,52 @@
     "scanned": false
    },
    "_file": "entries/plugins/moodball-app.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "open-design",
+   "description": "🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cu",
+   "install": "github:nexu-io/open-design",
+   "source": {
+    "repo": "https://github.com/nexu-io/open-design",
+    "npm": null,
+    "discussion": null
+   },
+   "publisher": {
+    "github": "nexu-io"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "github-topic-crawl",
+    "scanned": false
+   },
+   "notes": "爬取自 topic:dsh-plugin（★87098，星数仅记录不进信任面）；已人工过目 2026-08-16；install/描述待深核",
+   "_file": "entries/plugins/open-design.yml"
+  },
+  {
+   "kind": "app",
+   "name": "petdex",
+   "description": "A public gallery of animated pets for Codex, Claude Code, DeepSeek Harness, Hermes, OpenCode, Gemini CLI, and more.",
+   "install": "见仓库",
+   "source": {
+    "repo": "https://github.com/crafter-station/petdex",
+    "npm": null,
+    "discussion": null
+   },
+   "publisher": {
+    "github": "crafter-station"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "github-topic-crawl",
+    "scanned": false
+   },
+   "notes": "爬取自 topic:dsh-plugin（★3841，星数仅记录不进信任面）；已人工过目 2026-08-16；install/描述待深核",
+   "_file": "entries/plugins/petdex.yml"
   },
   {
    "kind": "plugin",
@@ -609,6 +793,29 @@
     "scanned": false
    },
    "_file": "entries/plugins/topology.yml"
+  },
+  {
+   "kind": "app",
+   "name": "voyager",
+   "description": "Enhancement suite for Gemini, AI Studio, Claude & ChatGPT — plus a prompt manager for any web UI, DeepSeek Harness included. / 面向 Gemini、AI Studio、Claude 与 ChatGPT 的增强套件；提示词管理器可用于任意 Web UI，含 DeepSeek Harness。",
+   "install": "见仓库",
+   "source": {
+    "repo": "https://github.com/Nagi-ovo/voyager",
+    "npm": null,
+    "discussion": null
+   },
+   "publisher": {
+    "github": "Nagi-ovo"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "github-topic-crawl",
+    "scanned": false
+   },
+   "notes": "爬取自 topic:dsh-plugin（★19433，星数仅记录不进信任面）；已人工过目 2026-08-16；install/描述待深核",
+   "_file": "entries/plugins/voyager.yml"
   }
  ]
 }

@@ -1,0 +1,19 @@
+kind: plugin
+name: brooks-lint
+description: AI code reviews grounded in 12 classic engineering books — decay
+  risk diagnostics with book citations, severity labels, and 6 analysis modes
+  including full-sweep auto-fix
+install: github:hyhmrright/brooks-lint
+source:
+  repo: https://github.com/hyhmrright/brooks-lint
+  npm: null
+  discussion: null
+publisher:
+  github: hyhmrright
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★1356，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

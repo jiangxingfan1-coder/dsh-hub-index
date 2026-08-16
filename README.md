@@ -29,6 +29,13 @@ compose 是 dsh 独有的一等分享单元——时空组合性哲学的生态�
 4. **compose 审计重心是 patch**——`!!js` 表达式即任意代码；简报文本按 prompt injection 面对待。
 5. 提醒使用者：装一个 dsh 插件 = npm postinstall + Host realm 零审批 = **交出整台机器**。unreviewed 条目请读源码后再装。
 
+## 联邦对象（现有目录，数据可对接）
+
+- [Blue-Whale-Harness](https://github.com/leenkcool/Blue-Whale-Harness)（#1728，1824 款收录）
+- [dsh-plugin-hub](https://github.com/deepseek-ai/deepseek-harness/discussions/2256)（商店插件，GitHub+npm 同步）
+- [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)（★3.4k 精选列表）
+- GitHub `topic:dsh-plugin`（4400+ 仓库）——`scripts/crawl-topic.mjs` 定期爬入 `drafts/`，人工过目后入库
+
 ## 提交条目
 
 1. Fork → `entries/<plugins|composes>/<name>.yml`（照 schema，字段不明就填 `null` + `notes` 标 todo，**不编造**）

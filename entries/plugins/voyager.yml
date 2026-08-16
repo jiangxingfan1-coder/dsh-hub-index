@@ -1,0 +1,19 @@
+kind: app
+name: voyager
+description: Enhancement suite for Gemini, AI Studio, Claude & ChatGPT — plus a
+  prompt manager for any web UI, DeepSeek Harness included. / 面向 Gemini、AI
+  Studio、Claude 与 ChatGPT 的增强套件；提示词管理器可用于任意 Web UI，含 DeepSeek Harness。
+install: 见仓库
+source:
+  repo: https://github.com/Nagi-ovo/voyager
+  npm: null
+  discussion: null
+publisher:
+  github: Nagi-ovo
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★19433，星数仅记录不进信任面）；已人工过目 2026-08-16；install/描述待深核

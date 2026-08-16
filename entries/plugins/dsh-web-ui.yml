@@ -1,0 +1,19 @@
+kind: plugin
+name: dsh-web-ui
+description: Plugin and skin collection for DeepSeek Harness (DSH) Web UI - task
+  board, git graph, right-side panel, remote mobile UI, pet, live token stats,
+  and skin center.
+install: github:zhu1090093659/dsh-web-ui
+source:
+  repo: https://github.com/zhu1090093659/dsh-web-ui
+  npm: null
+  discussion: null
+publisher:
+  github: zhu1090093659
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★2934，星数仅记录不进信任面）；已人工过目 2026-08-16；install/描述待深核

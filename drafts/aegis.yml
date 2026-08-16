@@ -1,0 +1,18 @@
+kind: plugin
+name: aegis
+description: "Make AI coding agents architecture-aware: baseline-first,
+  evidence-verified, drift-checked, and safe across long tasks."
+install: github:GanyuanRan/Aegis
+source:
+  repo: https://github.com/GanyuanRan/Aegis
+  npm: null
+  discussion: null
+publisher:
+  github: GanyuanRan
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★1012，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
