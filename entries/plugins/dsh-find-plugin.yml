@@ -1,0 +1,17 @@
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: npm-crawl
+  scanned: false
+kind: plugin
+name: dsh-find-plugin
+description: Agent 内找插件：live GitHub 搜索 dsh 插件。与本索引的 hub 工具互补——它走实时全网搜索，本索引走策展+信任分层。
+install: dsh-find-plugin
+source:
+  repo: null
+  npm: https://www.npmjs.com/package/dsh-find-plugin
+  discussion: null
+publisher:
+  github: null
+notes: repo 待核（todo）；同赛道差异化参考

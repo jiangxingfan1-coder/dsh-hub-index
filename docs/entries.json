@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-16T06:46:05.359Z",
+ "generated": "2026-08-16T06:50:02.539Z",
  "entries": [
   {
    "kind": "plugin",
@@ -92,6 +92,29 @@
    "_file": "entries/plugins/dsh-claude-antidote.yml"
   },
   {
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "npm-crawl",
+    "scanned": false
+   },
+   "kind": "plugin",
+   "name": "dsh-coagenthub",
+   "description": "CoAgentHub 客户端插件：从 DSH 内操作 CoAgentHub（列参与者/建协作等）。",
+   "install": "@laizhixingxingdeli/dsh-coagenthub",
+   "source": {
+    "repo": null,
+    "npm": "https://www.npmjs.com/package/@laizhixingxingdeli/dsh-coagenthub",
+    "discussion": null
+   },
+   "publisher": {
+    "github": null
+   },
+   "notes": "repo 待核（todo）",
+   "_file": "entries/plugins/dsh-coagenthub.yml"
+  },
+  {
    "kind": "plugin",
    "name": "dsh-experience-memory",
    "description": "持久经验记忆：把成功/失败蒸馏为人类可读 Markdown，显式 memory_search → memory_get 召回流，只加载相关记录不重放整会话。",
@@ -134,6 +157,29 @@
     "scanned": false
    },
    "_file": "entries/plugins/dsh-file-upload.yml"
+  },
+  {
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "npm-crawl",
+    "scanned": false
+   },
+   "kind": "plugin",
+   "name": "dsh-find-plugin",
+   "description": "Agent 内找插件：live GitHub 搜索 dsh 插件。与本索引的 hub 工具互补——它走实时全网搜索，本索引走策展+信任分层。",
+   "install": "dsh-find-plugin",
+   "source": {
+    "repo": null,
+    "npm": "https://www.npmjs.com/package/dsh-find-plugin",
+    "discussion": null
+   },
+   "publisher": {
+    "github": null
+   },
+   "notes": "repo 待核（todo）；同赛道差异化参考",
+   "_file": "entries/plugins/dsh-find-plugin.yml"
   },
   {
    "kind": "plugin",
@@ -270,6 +316,29 @@
    "_file": "entries/plugins/dsh-plugin-hub.yml"
   },
   {
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "npm-crawl",
+    "scanned": false
+   },
+   "kind": "plugin",
+   "name": "dsh-pocket",
+   "description": "手机口袋版：一个包+一个设置页，扫码即同步访问电脑上的 DSH（局域网+公网，实时同屏）。",
+   "install": "dsh-pocket",
+   "source": {
+    "repo": null,
+    "npm": "https://www.npmjs.com/package/dsh-pocket",
+    "discussion": null
+   },
+   "publisher": {
+    "github": null
+   },
+   "securityNotes": "远程同屏类：公网模式的中继/加密方案待核后再用。",
+   "_file": "entries/plugins/dsh-pocket.yml"
+  },
+  {
    "kind": "app",
    "name": "dsh-portable",
    "description": "DeepSeek Harness 便携构建：免安装分发形态。",
@@ -313,6 +382,52 @@
     "scanned": false
    },
    "_file": "entries/plugins/dsh-tool-diagnose.yml"
+  },
+  {
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "npm-crawl",
+    "scanned": false
+   },
+   "kind": "plugin",
+   "name": "dsh-web-open",
+   "description": "启动便利包：自动开浏览器、鲸鱼托盘图标、桌面快捷方式与一键启动。",
+   "install": "dsh-web-open",
+   "source": {
+    "repo": null,
+    "npm": "https://www.npmjs.com/package/dsh-web-open",
+    "discussion": null
+   },
+   "publisher": {
+    "github": null
+   },
+   "notes": "repo 待核（todo）",
+   "_file": "entries/plugins/dsh-web-open.yml"
+  },
+  {
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": "npm-crawl",
+    "scanned": false
+   },
+   "kind": "plugin",
+   "name": "dsh-web-plugin-manager",
+   "description": "Web UI 内的插件管理：列出、启用/禁用 DSH 插件。",
+   "install": "dsh-web-plugin-manager",
+   "source": {
+    "repo": null,
+    "npm": "https://www.npmjs.com/package/dsh-web-plugin-manager",
+    "discussion": null
+   },
+   "publisher": {
+    "github": null
+   },
+   "notes": "repo 待核（todo）",
+   "_file": "entries/plugins/dsh-web-plugin-manager.yml"
   },
   {
    "kind": "plugin",

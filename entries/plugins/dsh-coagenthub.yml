@@ -1,0 +1,17 @@
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: npm-crawl
+  scanned: false
+kind: plugin
+name: dsh-coagenthub
+description: CoAgentHub 客户端插件：从 DSH 内操作 CoAgentHub（列参与者/建协作等）。
+install: "@laizhixingxingdeli/dsh-coagenthub"
+source:
+  repo: null
+  npm: https://www.npmjs.com/package/@laizhixingxingdeli/dsh-coagenthub
+  discussion: null
+publisher:
+  github: null
+notes: repo 待核（todo）

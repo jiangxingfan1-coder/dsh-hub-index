@@ -1,0 +1,17 @@
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: npm-crawl
+  scanned: false
+kind: plugin
+name: dsh-web-plugin-manager
+description: Web UI 内的插件管理：列出、启用/禁用 DSH 插件。
+install: dsh-web-plugin-manager
+source:
+  repo: null
+  npm: https://www.npmjs.com/package/dsh-web-plugin-manager
+  discussion: null
+publisher:
+  github: null
+notes: repo 待核（todo）

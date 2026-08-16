@@ -1,0 +1,17 @@
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: npm-crawl
+  scanned: false
+kind: plugin
+name: dsh-pocket
+description: 手机口袋版：一个包+一个设置页，扫码即同步访问电脑上的 DSH（局域网+公网，实时同屏）。
+install: dsh-pocket
+source:
+  repo: null
+  npm: https://www.npmjs.com/package/dsh-pocket
+  discussion: null
+publisher:
+  github: null
+securityNotes: 远程同屏类：公网模式的中继/加密方案待核后再用。
