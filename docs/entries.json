@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-16T10:35:03.311Z",
+ "generated": "2026-08-16T10:48:20.576Z",
  "entries": [
   {
    "kind": "app",
@@ -295,6 +295,29 @@
    },
    "notes": "本索引项目自己的面板——自举条目；trust=community（发布者实名，未经第三方审计，不自评 verified）。",
    "_file": "entries/plugins/dsh-hub-panel.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-id",
+   "description": "零服务端登录/跨设备同步/会话接力：你的 DeepSeek key 锚定身份、你的私有 git 仓库当账号数据面。装机自动捕获插件清单、异地一次确认批量补齐、会话跨机移交（单写者纪律）。含 Agent 面 hub_search/hub_show 工具（安装走 ask_user_question 人批门）。",
+   "install": "github:jiangxingfan1-coder/dsh-id",
+   "source": {
+    "repo": "https://github.com/jiangxingfan1-coder/dsh-id",
+    "npm": null,
+    "discussion": null
+   },
+   "publisher": {
+    "github": "jiangxingfan1-coder"
+   },
+   "trust": "community",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "securityNotes": "key 绝不上传（身份=SHA-256 前 16 位哈希）；数据面须保持私有；安装动作全部人批。login 可选调用 gh 自动创建私库。",
+   "_file": "entries/plugins/dsh-id.yml"
   },
   {
    "kind": "app",
