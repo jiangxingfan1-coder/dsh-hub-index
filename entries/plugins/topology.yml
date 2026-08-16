@@ -1,0 +1,19 @@
+kind: plugin
+name: topology
+description: >-
+  渲染运行中 dsh 实例的实时插件依赖图（插件=节点、inject=边、服务=枢纽）。
+  随附第三方插件接入 dsh 的完整指南（三大 gotchas）——hub 客户端插件的施工参考。
+install: "github:todo/topology"
+source:
+  repo: null
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/1565
+publisher:
+  github: null
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: "2026-08-16"
+  federatedFrom: null
+  scanned: false
+notes: discussion 正文中 repo URL 被截断，待进帖核实（todo）。

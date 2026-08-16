@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dsh-hub.dev/schema/entry.schema.json",
+  "title": "dsh-hub plugin/skill entry",
+  "type": "object",
+  "required": ["kind", "name", "description", "install", "source", "trust", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "enum": ["plugin", "skill"] },
+    "name": { "type": "string", "pattern": "^[a-z0-9@][a-z0-9-_/.@]*$" },
+    "description": { "type": "string", "maxLength": 300 },
+    "install": {
+      "type": "string",
+      "description": "dsh plugin add 的说明符：npm 包名或 github:owner/repo；skill 为放置路径说明"
+    },
+    "source": {
+      "type": "object",
+      "required": ["repo"],
+      "additionalProperties": false,
+      "properties": {
+        "repo": { "type": ["string", "null"], "description": "代码仓库 URL；null = 待补（todo）" },
+        "npm": { "type": ["string", "null"] },
+        "discussion": { "type": ["string", "null"], "description": "首次出现的官方 discussion/公告 URL" }
+      }
+    },
+    "publisher": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": { "github": { "type": ["string", "null"] } }
+    },
+    "trust": {
+      "enum": ["official", "verified", "community", "unreviewed"],
+      "description": "official=@deepseek-ai 域；verified=发布者实名+仓库-npm 对应+构建溯源核验；community=有实名无审计；unreviewed=联邦/新收录默认档。下载量、星数、排名永不参与信任评级（ClawHub 排名操纵教训）。"
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["addedBy", "addedAt"],
+      "additionalProperties": false,
+      "properties": {
+        "addedBy": { "type": "string", "description": "提交此条目的 GitHub 用户名" },
+        "addedAt": { "type": "string", "format": "date" },
+        "federatedFrom": { "type": ["string", "null"], "description": "联邦来源（blue-whale / dsh-plugin-hub / npm-crawl / null=直接提交）" },
+        "verifiedBy": { "type": ["string", "null"] },
+        "scanned": { "type": "boolean", "default": false, "description": "是否过静态扫描；true≠安全（扫描非银弹）" }
+      }
+    },
+    "notes": { "type": "string", "description": "安装/兼容注意事项（如必填 config）" }
+  }
+}

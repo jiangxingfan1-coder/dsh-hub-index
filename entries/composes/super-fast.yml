@@ -1,0 +1,35 @@
+# hub-index 条目：super-fast compose（生态第一个 compose 展品）
+compose: 1
+name: super-fast
+version: 11.0.0
+description: >-
+  两相位混合调度组合（plan max 深规划 → durable 触发切换 → exec 扩容快执行
+  → 测试连败 rescue 升档），含会话清单 resume 与失败蒸馏。19 轮受控实验产物：
+  对极简模式 -37%~-76% 墙钟、思维链保真 1.00、六题电池判分全满。
+publisher:
+  github: jiangxingfan1-coder
+requires:
+  dsh: ">=0.1.0-rc.6"
+  models: [deepseek-v4-pro, deepseek-v4-flash]
+plugins:
+  - ref: "@deepseek-ai/dsh-tool-todo"
+    configNote: "必填 allowParallelInProgress"
+files:
+  patch: patches/super-fast.patch.yml
+  preset: preset/
+  plugins: plugins/
+  briefing: null
+  docs: AGENTS.md
+security:
+  jsExpressions: true
+  listensWaterfalls: [agent/request, tools/post-execute]
+  spawnsSubagents: true
+  writesOutsideDsh: false
+trust: community
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: "2026-08-16"
+  federatedFrom: null
+  scanned: false
+# source 说明：compose 包当前在私有数据面（dsh-identity/superfast/），
+# 公开发布待作者决定；本条目先行示范 compose 规范形态。

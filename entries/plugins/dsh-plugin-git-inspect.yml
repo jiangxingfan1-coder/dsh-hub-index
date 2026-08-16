@@ -1,0 +1,16 @@
+kind: plugin
+name: dsh-plugin-git-inspect
+description: 只读了解 Git 仓库状态的辅助插件。
+install: "github:Wanbinyu/dsh-plugin-git-inspect"
+source:
+  repo: https://github.com/Wanbinyu/dsh-plugin-git-inspect
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2260
+publisher:
+  github: Wanbinyu
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: "2026-08-16"
+  federatedFrom: null
+  scanned: false

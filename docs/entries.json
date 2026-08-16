@@ -1,0 +1,165 @@
+{
+ "generated": "2026-08-16T06:33:18.872Z",
+ "entries": [
+  {
+   "kind": "plugin",
+   "name": "dsh-billing",
+   "description": "记录并查看 Harness 会话 Token 使用量，按可配置模型价格提供费用参考。",
+   "install": "github:Wanbinyu/dsh-billing",
+   "source": {
+    "repo": "https://github.com/Wanbinyu/dsh-billing",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2260"
+   },
+   "publisher": {
+    "github": "Wanbinyu"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/dsh-billing.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-notify-win",
+   "description": "Windows 原生 toast 通知 + 任务栏闪烁提醒（任务完成/需要审批时）。",
+   "install": "dsh-notify-win",
+   "source": {
+    "repo": null,
+    "npm": "https://www.npmjs.com/package/dsh-notify-win",
+    "discussion": null
+   },
+   "publisher": {
+    "github": null
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "notes": "见官方 discussions「Show Your Plugins!」分类同名帖；repo/发布者待核（todo）。",
+   "_file": "entries/plugins/dsh-notify-win.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-plugin-git-inspect",
+   "description": "只读了解 Git 仓库状态的辅助插件。",
+   "install": "github:Wanbinyu/dsh-plugin-git-inspect",
+   "source": {
+    "repo": "https://github.com/Wanbinyu/dsh-plugin-git-inspect",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2260"
+   },
+   "publisher": {
+    "github": "Wanbinyu"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/dsh-plugin-git-inspect.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-plugin-hub",
+   "description": "社区插件商店插件：浏览/搜索（GitHub+npm 同步）、一键安装+失败回滚、 发布流程含恶意代码拦截。注意：其展示的下载量属可操纵信号，不构成信任依据。",
+   "install": "dsh-plugin-hub",
+   "source": {
+    "repo": null,
+    "npm": "https://www.npmjs.com/package/dsh-plugin-hub",
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2256"
+   },
+   "publisher": {
+    "github": null
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "notes": "repo 与发布者待核（todo）；潜在联邦数据源之一。",
+   "_file": "entries/plugins/dsh-plugin-hub.yml"
+  },
+  {
+   "compose": 1,
+   "name": "super-fast",
+   "version": "11.0.0",
+   "description": "两相位混合调度组合（plan max 深规划 → durable 触发切换 → exec 扩容快执行 → 测试连败 rescue 升档），含会话清单 resume 与失败蒸馏。19 轮受控实验产物： 对极简模式 -37%~-76% 墙钟、思维链保真 1.00、六题电池判分全满。",
+   "publisher": {
+    "github": "jiangxingfan1-coder"
+   },
+   "requires": {
+    "dsh": ">=0.1.0-rc.6",
+    "models": [
+     "deepseek-v4-pro",
+     "deepseek-v4-flash"
+    ]
+   },
+   "plugins": [
+    {
+     "ref": "@deepseek-ai/dsh-tool-todo",
+     "configNote": "必填 allowParallelInProgress"
+    }
+   ],
+   "files": {
+    "patch": "patches/super-fast.patch.yml",
+    "preset": "preset/",
+    "plugins": "plugins/",
+    "briefing": null,
+    "docs": "AGENTS.md"
+   },
+   "security": {
+    "jsExpressions": true,
+    "listensWaterfalls": [
+     "agent/request",
+     "tools/post-execute"
+    ],
+    "spawnsSubagents": true,
+    "writesOutsideDsh": false
+   },
+   "trust": "community",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "kind": "compose",
+   "_file": "entries/composes/super-fast.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "topology",
+   "description": "渲染运行中 dsh 实例的实时插件依赖图（插件=节点、inject=边、服务=枢纽）。 随附第三方插件接入 dsh 的完整指南（三大 gotchas）——hub 客户端插件的施工参考。",
+   "install": "github:todo/topology",
+   "source": {
+    "repo": null,
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/1565"
+   },
+   "publisher": {
+    "github": null
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "notes": "discussion 正文中 repo URL 被截断，待进帖核实（todo）。",
+   "_file": "entries/plugins/topology.yml"
+  }
+ ]
+}

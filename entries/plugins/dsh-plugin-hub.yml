@@ -1,0 +1,19 @@
+kind: plugin
+name: dsh-plugin-hub
+description: >-
+  社区插件商店插件：浏览/搜索（GitHub+npm 同步）、一键安装+失败回滚、
+  发布流程含恶意代码拦截。注意：其展示的下载量属可操纵信号，不构成信任依据。
+install: dsh-plugin-hub
+source:
+  repo: null
+  npm: https://www.npmjs.com/package/dsh-plugin-hub
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2256
+publisher:
+  github: null
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: "2026-08-16"
+  federatedFrom: null
+  scanned: false
+notes: repo 与发布者待核（todo）；潜在联邦数据源之一。

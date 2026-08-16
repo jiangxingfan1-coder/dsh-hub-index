@@ -1,0 +1,17 @@
+kind: plugin
+name: dsh-notify-win
+description: Windows 原生 toast 通知 + 任务栏闪烁提醒（任务完成/需要审批时）。
+install: dsh-notify-win
+source:
+  repo: null
+  npm: https://www.npmjs.com/package/dsh-notify-win
+  discussion: null
+publisher:
+  github: null
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: "2026-08-16"
+  federatedFrom: null
+  scanned: false
+notes: 见官方 discussions「Show Your Plugins!」分类同名帖；repo/发布者待核（todo）。

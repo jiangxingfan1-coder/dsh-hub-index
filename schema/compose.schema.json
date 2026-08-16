@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dsh-hub.dev/schema/compose.schema.json",
+  "title": "dsh compose — 可分享的能力组合（patch + preset + 简报 + 插件清单）",
+  "description": "dsh 的时空组合性哲学在生态层的一等公民：真正的能力单元不是单个插件，而是一棵调好的组合树 overlay。compose 包 = 一个目录，含 compose.yml（本 schema）+ 其声明的文件。",
+  "type": "object",
+  "required": ["compose", "name", "version", "description", "requires", "files", "security"],
+  "additionalProperties": false,
+  "properties": {
+    "compose": { "const": 1, "description": "规范版本号" },
+    "name": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+" },
+    "description": { "type": "string", "maxLength": 500 },
+    "publisher": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": { "github": { "type": ["string", "null"] } }
+    },
+    "requires": {
+      "type": "object",
+      "required": ["dsh"],
+      "additionalProperties": false,
+      "properties": {
+        "dsh": { "type": "string", "description": "semver range，如 >=0.1.0-rc.6" },
+        "models": { "type": "array", "items": { "type": "string" }, "description": "锚定的模型（机制绑定时声明，如 deepseek-v4-pro）" }
+      }
+    },
+    "plugins": {
+      "type": "array",
+      "description": "引用的外部插件（npm/github），不内嵌代码；本地 .mjs 随包分发不在此列",
+      "items": {
+        "type": "object",
+        "required": ["ref"],
+        "additionalProperties": false,
+        "properties": {
+          "ref": { "type": "string", "description": "npm 包名或 github:owner/repo" },
+          "configNote": { "type": "string", "description": "必填 config 提示（dsh 惯例：插件零默认业务配置）" }
+        }
+      }
+    },
+    "files": {
+      "type": "object",
+      "required": ["patch"],
+      "additionalProperties": false,
+      "properties": {
+        "patch": { "type": "string", "description": "CLI --patch 用的 overlay 相对路径" },
+        "preset": { "type": ["string", "null"], "description": "webUI agent preset 目录相对路径" },
+        "plugins": { "type": ["string", "null"], "description": "随包分发的本地插件目录" },
+        "briefing": { "type": ["string", "null"], "description": "简报/纪律文本（按 prompt injection 面审计）" },
+        "docs": { "type": ["string", "null"] }
+      }
+    },
+    "security": {
+      "type": "object",
+      "required": ["jsExpressions"],
+      "additionalProperties": false,
+      "properties": {
+        "jsExpressions": { "type": "boolean", "description": "patch/preset 是否含 !!js 表达式（任意代码，审核重点）" },
+        "listensWaterfalls": { "type": "array", "items": { "type": "string" }, "description": "监听的 waterfall seam（agent/request 等 = 请求波形改写能力）" },
+        "spawnsSubagents": { "type": "boolean" },
+        "writesOutsideDsh": { "type": "boolean", "description": "是否写 ~/.dsh 之外的路径" }
+      }
+    },
+    "trust": { "enum": ["official", "verified", "community", "unreviewed"] },
+    "provenance": { "$ref": "entry.schema.json#/properties/provenance" }
+  }
+}
