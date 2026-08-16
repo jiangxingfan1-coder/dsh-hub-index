@@ -16,6 +16,15 @@
       "additionalProperties": false,
       "properties": { "github": { "type": ["string", "null"] } }
     },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "repo": { "type": ["string", "null"], "description": "compose 包的公开仓库" },
+        "npm": { "type": ["string", "null"] },
+        "discussion": { "type": ["string", "null"] }
+      }
+    },
     "requires": {
       "type": "object",
       "required": ["dsh"],

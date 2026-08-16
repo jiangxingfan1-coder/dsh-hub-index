@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-16T07:02:57.850Z",
+ "generated": "2026-08-16T10:35:03.311Z",
  "entries": [
   {
    "kind": "app",
@@ -746,6 +746,11 @@
      "configNote": "必填 allowParallelInProgress"
     }
    ],
+   "source": {
+    "repo": "https://github.com/jiangxingfan1-coder/dsh-super-fast",
+    "npm": null,
+    "discussion": null
+   },
    "files": {
     "patch": "patches/super-fast.patch.yml",
     "preset": "preset/",

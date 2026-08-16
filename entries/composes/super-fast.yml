@@ -14,6 +14,10 @@ requires:
 plugins:
   - ref: "@deepseek-ai/dsh-tool-todo"
     configNote: "必填 allowParallelInProgress"
+source:
+  repo: https://github.com/jiangxingfan1-coder/dsh-super-fast
+  npm: null
+  discussion: null
 files:
   patch: patches/super-fast.patch.yml
   preset: preset/
@@ -31,5 +35,3 @@ provenance:
   addedAt: "2026-08-16"
   federatedFrom: null
   scanned: false
-# source 说明：compose 包当前在私有数据面（dsh-identity/superfast/），
-# 公开发布待作者决定；本条目先行示范 compose 规范形态。
