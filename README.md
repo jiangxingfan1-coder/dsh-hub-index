@@ -70,7 +70,7 @@
 
 1. Fork → `entries/<plugins|composes>/<name>.yml`（照 schema；字段不明填 `null` + `notes` 标 todo，**不编造**）
 2. PR —— CI 自动校验 schema 与信任纪律（新条目不得自评 official/verified）
-3. 维护者核验来源后合并；晋级 `verified` 需仓库-npm 对应与发布者实名核验
+3. 维护者核验来源后合并；晋级 `verified` 需仓库-npm 对应与发布者实名核验；**第三方运行时行为验证报告**（如 [dsh-plugin-verify](https://github.com/deepseek-ai/deepseek-harness/discussions/2276#discussioncomment-18038)) 可作为可选晋级证据挂在条目 `provenance.reportUrl`——静态+行为两条线闭合，判定权始终在维护者
 
 本地开发：`npm install && npm run validate && npm run build`（build 生成 `docs/entries.json` 供 Pages 与各客户端消费）。
 
