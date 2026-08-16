@@ -16,4 +16,7 @@ provenance:
   addedAt: 2026-08-16
   federatedFrom: null
   scanned: false
+  verifiedBy: dsh-plugin-verify@0.1.2
+  verifiedAt: 2026-08-16
+  reportUrl: https://github.com/qing3a/dsh-plugin-verify/blob/main/reports/dsh-id-2026-08-16.json
 securityNotes: key 绝不上传（身份=SHA-256 前 16 位哈希）；数据面须保持私有；安装动作全部人批。login 可选调用 gh 自动创建私库。

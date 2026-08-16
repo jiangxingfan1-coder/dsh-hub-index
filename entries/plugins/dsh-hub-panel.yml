@@ -15,4 +15,7 @@ provenance:
   addedAt: 2026-08-16
   federatedFrom: null
   scanned: false
+  verifiedBy: dsh-plugin-verify@0.1.2
+  verifiedAt: 2026-08-16
+  reportUrl: https://github.com/qing3a/dsh-plugin-verify/blob/main/reports/hub-panel-2026-08-16.json
 notes: 本索引项目自己的面板——自举条目；trust=community（发布者实名，未经第三方审计，不自评 verified）。
