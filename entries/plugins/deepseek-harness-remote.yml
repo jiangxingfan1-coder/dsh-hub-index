@@ -1,0 +1,18 @@
+kind: plugin
+name: deepseek-harness-remote
+description: E2E 加密远程访问方案（X25519 + Noise IK）：手机/浏览器连本地 Harness，Host
+  仅出站连接，服务端只做协调无法读内容；仅暴露 ApiProxy 能力不开放 Shell。
+install: github:liguobao/deepseek-harness-remote
+source:
+  repo: https://github.com/liguobao/deepseek-harness-remote
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2272
+publisher:
+  github: liguobao
+securityNotes: 依赖作者运营的第三方协调服务端（含注册/邀请码）；密文中继架构，信任模型见其文档。
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false

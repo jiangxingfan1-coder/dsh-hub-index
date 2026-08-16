@@ -6,7 +6,7 @@
   "required": ["kind", "name", "description", "install", "source", "trust", "provenance"],
   "additionalProperties": false,
   "properties": {
-    "kind": { "enum": ["plugin", "skill"] },
+    "kind": { "enum": ["plugin", "skill", "app"], "description": "app = 生态周边独立应用（桌宠/启动器/便携构建等，不经 dsh plugin add 安装）" },
     "name": { "type": "string", "pattern": "^[a-z0-9@][a-z0-9-_/.@]*$" },
     "description": { "type": "string", "maxLength": 300 },
     "install": {
@@ -44,6 +44,7 @@
         "scanned": { "type": "boolean", "default": false, "description": "是否过静态扫描；true≠安全（扫描非银弹）" }
       }
     },
-    "notes": { "type": "string", "description": "安装/兼容注意事项（如必填 config）" }
+    "notes": { "type": "string", "description": "安装/兼容注意事项（如必填 config）" },
+    "securityNotes": { "type": "string", "description": "安全事实陈述（远程访问面、凭据需求、能力覆盖、重打包供应链等）——描述性，不替代审计；来源自 dsh-claude-antidote 案例：插件可静默覆盖另一插件行为而保留 UI 假象" }
   }
 }

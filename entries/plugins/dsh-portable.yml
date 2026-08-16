@@ -1,0 +1,17 @@
+kind: app
+name: dsh-portable
+description: DeepSeek Harness 便携构建：免安装分发形态。
+install: 见仓库 Releases
+source:
+  repo: https://github.com/WSL043/DSH-Portable
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2219
+publisher:
+  github: WSL043
+securityNotes: 非官方重打包构建——供应链风险高于官方 npm 渠道（参考 ClawHub 假安装器攻击面），校验来源后再用。
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false

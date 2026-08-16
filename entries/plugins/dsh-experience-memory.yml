@@ -1,0 +1,16 @@
+kind: plugin
+name: dsh-experience-memory
+description: 持久经验记忆：把成功/失败蒸馏为人类可读 Markdown，显式 memory_search → memory_get 召回流，只加载相关记录不重放整会话。
+install: github:ganfabo123-cmyk/dsh-experience-memory
+source:
+  repo: https://github.com/ganfabo123-cmyk/dsh-experience-memory
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2236
+publisher:
+  github: ganfabo123-cmyk
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false

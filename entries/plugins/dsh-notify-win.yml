@@ -5,13 +5,12 @@ install: dsh-notify-win
 source:
   repo: null
   npm: https://www.npmjs.com/package/dsh-notify-win
-  discussion: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2251
 publisher:
-  github: null
+  github: Andyqwe44
 trust: unreviewed
 provenance:
   addedBy: jiangxingfan1-coder
-  addedAt: "2026-08-16"
+  addedAt: 2026-08-16
   federatedFrom: null
   scanned: false
-notes: 见官方 discussions「Show Your Plugins!」分类同名帖；repo/发布者待核（todo）。

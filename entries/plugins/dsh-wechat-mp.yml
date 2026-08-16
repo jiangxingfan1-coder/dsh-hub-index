@@ -1,0 +1,17 @@
+kind: plugin
+name: dsh-wechat-mp
+description: Markdown 进、排好版的公众号草稿出：CSS 逐条内联（编辑器只认 style 属性）、本地图片走微信上传接口换 mmbiz 链接，四个工具含只读渲染。
+install: dsh-wechat-mp
+source:
+  repo: https://github.com/coolbreezecoin/dsh-wechat-mp
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2240
+publisher:
+  github: coolbreezecoin
+securityNotes: 需要微信公众号凭据以调用上传/草稿接口，注意凭据存放位置。
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false

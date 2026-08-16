@@ -1,0 +1,16 @@
+kind: plugin
+name: dsh-whale-musume
+description: 纯本地看板娘桌宠：47 张立绘、494 条台词、工作联动（DSH 开跑即进入工作态）、分时问候、互动养成与成就墙；除可选天气外零联网、无遥测。
+install: 见仓库 Releases
+source:
+  repo: https://github.com/Sutera-Diffusus/dsh-whale-musume
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2264
+publisher:
+  github: Sutera-Diffusus
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false

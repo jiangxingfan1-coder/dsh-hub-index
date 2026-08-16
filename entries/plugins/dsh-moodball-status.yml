@@ -1,0 +1,17 @@
+kind: plugin
+name: dsh-moodball-status
+description: MoodBall 桌宠的状态半区（纯 host 无界面）：订阅 turn/tool/approval 事件推导 Agent 心情，供
+  macOS 悬浮球 App 读取——浏览器最小化也能看任务状态。
+install: github:sundusk/dsh-moodball
+source:
+  repo: https://github.com/sundusk/dsh-moodball
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2265
+publisher:
+  github: sundusk
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false

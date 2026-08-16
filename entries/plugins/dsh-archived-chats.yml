@@ -1,0 +1,16 @@
+kind: plugin
+name: dsh-archived-chats
+description: Settings 里的归档会话管理页：按工作区分组、可搜索过滤、单条/整组恢复即时回侧栏、真·原地删除（无需重启）。
+install: github:Ultronen/dsh-archived-chats
+source:
+  repo: https://github.com/Ultronen/dsh-archived-chats
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2223
+publisher:
+  github: Ultronen
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false

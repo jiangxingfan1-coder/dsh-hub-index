@@ -1,0 +1,17 @@
+kind: plugin
+name: quotable
+description: "Codex 桌面式划选引用：勾选任意模型输出成 chip，以独立信封消息（source:
+  plugin、防注入定界）随提问入上下文，原文字节级不变；配会话绑定解读边栏。单会话 5 条、单条 4000 字符。"
+install: github:bjvgukv2584-cmyk/Quotable-DeepSeek-Harness
+source:
+  repo: https://github.com/bjvgukv25842-cmyk/Quotable-DeepSeek-Harness
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2235
+publisher:
+  github: bjvgukv25842-cmyk
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false

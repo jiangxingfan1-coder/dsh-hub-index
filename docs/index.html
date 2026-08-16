@@ -33,26 +33,47 @@
 <p class="sub">DeepSeek Harness 生态的发现与信任索引 — 插件 · 技能 · 组合（compose）</p>
 <div class="warn">⚠️ 装一个 dsh 插件 = npm postinstall + Host realm 零审批 = 交出整台机器。<b>unreviewed</b> 条目请读源码后再装。下载量与排名不参与信任评级（可操纵信号）。</div>
 <input id="q" type="search" placeholder="搜索名称 / 描述…" autocomplete="off">
+<div id="filters" style="display:flex;gap:.4rem;flex-wrap:wrap;margin:-.5rem 0 1rem"></div>
+<p id="count" class="meta" style="margin:0 0 .75rem"></p>
 <div id="list">加载中…</div>
 <footer>信任分层：official（官方域）→ verified（实名+溯源核验）→ community（实名无审计）→ unreviewed（默认档）。提交条目见 <a href="https://github.com/jiangxingfan1-coder/dsh-hub-index">仓库 README</a>。</footer>
 <script>
 const TRUST = { official:'trust-official', verified:'trust-verified', community:'trust-community', unreviewed:'trust-unreviewed' }
-let DATA = []
+let DATA = [], fKind = 'all', fTrust = 'all'
 function esc(s){ return String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])) }
-function render(q){
-  q = (q||'').toLowerCase()
-  const hits = DATA.filter(e => !q || (e.name+' '+e.description).toLowerCase().includes(q))
+function installLine(e){
+  if (!e.install) return ''
+  const cmd = /^(github:|@|[a-z0-9-]+$)/.test(e.install) && e.kind === 'plugin' ? `dsh plugin add ${e.install}` : e.install
+  return `安装：<code>${esc(cmd)}</code> · `
+}
+function chips(){
+  const kinds = ['all', ...new Set(DATA.map(e=>e.kind))]
+  const trusts = ['all', ...new Set(DATA.map(e=>e.trust))]
+  document.getElementById('filters').innerHTML =
+    kinds.map(k=>`<button class="chip" data-f="kind" data-v="${k}" style="cursor:pointer;border:1px solid ${k===fKind?'currentColor':'var(--line)'}">${k}</button>`).join('') +
+    '<span style="width:.6rem"></span>' +
+    trusts.map(t=>`<button class="chip ${TRUST[t]||''}" data-f="trust" data-v="${t}" style="cursor:pointer;border:1px solid ${t===fTrust?'currentColor':'transparent'}">${t}</button>`).join('')
+}
+function render(){
+  const q = document.getElementById('q').value.toLowerCase()
+  const hits = DATA.filter(e =>
+    (fKind==='all' || e.kind===fKind) && (fTrust==='all' || e.trust===fTrust) &&
+    (!q || (e.name+' '+e.description+' '+(e.publisher?.github||'')).toLowerCase().includes(q)))
+  document.getElementById('count').textContent =
+    `${hits.length} / ${DATA.length} 条目 · ${DATA.filter(e=>e.kind==='plugin').length} 插件 · ${DATA.filter(e=>e.kind==='compose').length} 组合 · ${DATA.filter(e=>e.kind==='app').length} 周边应用`
   document.getElementById('list').innerHTML = hits.map(e => `
-    <div class="card">
+    <div class="card"${e.kind==='compose' ? ' style="border-left:3px solid #6366f1"' : ''}>
       <div class="row">
         <span class="name">${esc(e.name)}</span>
         <span class="chip">${esc(e.kind)}</span>
         <span class="chip ${TRUST[e.trust]||''}">${esc(e.trust)}</span>
         ${e.security?.jsExpressions ? '<span class="chip trust-unreviewed" title="patch/preset 含 !!js 表达式（任意代码）">!!js</span>' : ''}
+        ${e.publisher?.github ? `<span class="chip" title="发布者">@${esc(e.publisher.github)}</span>` : ''}
       </div>
       <div class="desc">${esc(e.description)}</div>
+      ${e.securityNotes ? `<div class="meta" style="margin:.2rem 0 .4rem">🔎 <i>${esc(e.securityNotes)}</i></div>` : ''}
       <div class="meta">
-        ${e.install ? `安装：<code>${esc(e.install.startsWith('dsh ')?e.install:`dsh plugin add ${e.install}`)}</code> · ` : ''}
+        ${installLine(e)}
         ${e.source?.repo ? `<a href="${esc(e.source.repo)}">仓库</a> · ` : ''}
         ${e.source?.npm ? `<a href="${esc(e.source.npm)}">npm</a> · ` : ''}
         ${e.source?.discussion ? `<a href="${esc(e.source.discussion)}">discussion</a> · ` : ''}
@@ -60,8 +81,13 @@ function render(q){
       </div>
     </div>`).join('') || '<p class="meta">无匹配条目</p>'
 }
-fetch('entries.json').then(r=>r.json()).then(d=>{ DATA=d.entries; render('') })
-document.getElementById('q').addEventListener('input', e=>render(e.target.value))
+document.getElementById('filters').addEventListener('click', ev=>{
+  const b = ev.target.closest('button'); if (!b) return
+  if (b.dataset.f==='kind') fKind = b.dataset.v; else fTrust = b.dataset.v
+  chips(); render()
+})
+fetch('entries.json').then(r=>r.json()).then(d=>{ DATA=d.entries; chips(); render() })
+document.getElementById('q').addEventListener('input', render)
 </script>
 </body>
 </html>

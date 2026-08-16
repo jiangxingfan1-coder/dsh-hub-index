@@ -1,0 +1,18 @@
+kind: plugin
+name: dsh-full-remote
+description: 鉴权反向代理插件：改写 Host/Origin 让隧道场景（同 WiFi/cloudflared/frp）下的特权接口不再
+  403；含设备会话管理与扫码邀请，进程仍只听本机。
+install: dsh-full-remote
+source:
+  repo: https://github.com/JUANWANG-BUAA/dsh-full-remote
+  npm: https://www.npmjs.com/package/dsh-full-remote
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2274
+publisher:
+  github: JUANWANG-BUAA
+securityNotes: 远程访问类插件：绕过回环限制的鉴权层，部署前应审阅其鉴权实现。
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false

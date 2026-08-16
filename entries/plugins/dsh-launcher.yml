@@ -1,0 +1,16 @@
+kind: app
+name: dsh-launcher
+description: 社区启动器（Wanbinyu 系列）：快速启动 Windows 网页端。
+install: 见仓库
+source:
+  repo: https://github.com/Wanbinyu/dsh-launcher
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2260
+publisher:
+  github: Wanbinyu
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false

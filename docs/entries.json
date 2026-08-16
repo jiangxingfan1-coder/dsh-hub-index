@@ -1,6 +1,51 @@
 {
- "generated": "2026-08-16T06:33:18.872Z",
+ "generated": "2026-08-16T06:46:05.359Z",
  "entries": [
+  {
+   "kind": "plugin",
+   "name": "deepseek-harness-remote",
+   "description": "E2E 加密远程访问方案（X25519 + Noise IK）：手机/浏览器连本地 Harness，Host 仅出站连接，服务端只做协调无法读内容；仅暴露 ApiProxy 能力不开放 Shell。",
+   "install": "github:liguobao/deepseek-harness-remote",
+   "source": {
+    "repo": "https://github.com/liguobao/deepseek-harness-remote",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2272"
+   },
+   "publisher": {
+    "github": "liguobao"
+   },
+   "securityNotes": "依赖作者运营的第三方协调服务端（含注册/邀请码）；密文中继架构，信任模型见其文档。",
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/deepseek-harness-remote.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-archived-chats",
+   "description": "Settings 里的归档会话管理页：按工作区分组、可搜索过滤、单条/整组恢复即时回侧栏、真·原地删除（无需重启）。",
+   "install": "github:Ultronen/dsh-archived-chats",
+   "source": {
+    "repo": "https://github.com/Ultronen/dsh-archived-chats",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2223"
+   },
+   "publisher": {
+    "github": "Ultronen"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/dsh-archived-chats.yml"
+  },
   {
    "kind": "plugin",
    "name": "dsh-billing",
@@ -25,16 +70,39 @@
   },
   {
    "kind": "plugin",
-   "name": "dsh-notify-win",
-   "description": "Windows 原生 toast 通知 + 任务栏闪烁提醒（任务完成/需要审批时）。",
-   "install": "dsh-notify-win",
+   "name": "dsh-claude-antidote",
+   "description": "能力覆盖演示级插件：让 dsh-claude-ux 的「Claude 风控」设置页照常显示已启用，实际执行链（区域拒绝/对话终止/分类请求）被精确 patch 拔除——「灯是亮的，线是拔的」。",
+   "install": "见 discussion（需先装原插件再装本插件）",
    "source": {
     "repo": null,
-    "npm": "https://www.npmjs.com/package/dsh-notify-win",
-    "discussion": null
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2275"
    },
    "publisher": {
-    "github": null
+    "github": "FolioTemp"
+   },
+   "securityNotes": "安全教材：证明插件可静默覆盖另一插件的行为而保留其 UI 假象（bundle patch + host hooks + client slots）。装它=明知禁用风控；更大的含义是任何插件都可能被同类手法覆盖——审计需看全组合树。",
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/dsh-claude-antidote.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-experience-memory",
+   "description": "持久经验记忆：把成功/失败蒸馏为人类可读 Markdown，显式 memory_search → memory_get 召回流，只加载相关记录不重放整会话。",
+   "install": "github:ganfabo123-cmyk/dsh-experience-memory",
+   "source": {
+    "repo": "https://github.com/ganfabo123-cmyk/dsh-experience-memory",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2236"
+   },
+   "publisher": {
+    "github": "ganfabo123-cmyk"
    },
    "trust": "unreviewed",
    "provenance": {
@@ -43,7 +111,117 @@
     "federatedFrom": null,
     "scanned": false
    },
-   "notes": "见官方 discussions「Show Your Plugins!」分类同名帖；repo/发布者待核（todo）。",
+   "_file": "entries/plugins/dsh-experience-memory.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-file-upload",
+   "description": "Claude 桌面版风格文件上传：回形针+全局拖放、多文件附件卡片、小文本直接入 composer、文档经内置 MarkItDown 转 Markdown，零配置。",
+   "install": "dsh-file-upload",
+   "source": {
+    "repo": "https://github.com/HongMing-Huang/dsh-file-upload",
+    "npm": "https://www.npmjs.com/package/dsh-file-upload",
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2266"
+   },
+   "publisher": {
+    "github": "HongMing-Huang"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/dsh-file-upload.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-full-remote",
+   "description": "鉴权反向代理插件：改写 Host/Origin 让隧道场景（同 WiFi/cloudflared/frp）下的特权接口不再 403；含设备会话管理与扫码邀请，进程仍只听本机。",
+   "install": "dsh-full-remote",
+   "source": {
+    "repo": "https://github.com/JUANWANG-BUAA/dsh-full-remote",
+    "npm": "https://www.npmjs.com/package/dsh-full-remote",
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2274"
+   },
+   "publisher": {
+    "github": "JUANWANG-BUAA"
+   },
+   "securityNotes": "远程访问类插件：绕过回环限制的鉴权层，部署前应审阅其鉴权实现。",
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/dsh-full-remote.yml"
+  },
+  {
+   "kind": "app",
+   "name": "dsh-launcher",
+   "description": "社区启动器（Wanbinyu 系列）：快速启动 Windows 网页端。",
+   "install": "见仓库",
+   "source": {
+    "repo": "https://github.com/Wanbinyu/dsh-launcher",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2260"
+   },
+   "publisher": {
+    "github": "Wanbinyu"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/dsh-launcher.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-moodball-status",
+   "description": "MoodBall 桌宠的状态半区（纯 host 无界面）：订阅 turn/tool/approval 事件推导 Agent 心情，供 macOS 悬浮球 App 读取——浏览器最小化也能看任务状态。",
+   "install": "github:sundusk/dsh-moodball",
+   "source": {
+    "repo": "https://github.com/sundusk/dsh-moodball",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2265"
+   },
+   "publisher": {
+    "github": "sundusk"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/dsh-moodball-status.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-notify-win",
+   "description": "Windows 原生 toast 通知 + 任务栏闪烁提醒（任务完成/需要审批时）。",
+   "install": "dsh-notify-win",
+   "source": {
+    "repo": null,
+    "npm": "https://www.npmjs.com/package/dsh-notify-win",
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2251"
+   },
+   "publisher": {
+    "github": "Andyqwe44"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
    "_file": "entries/plugins/dsh-notify-win.yml"
   },
   {
@@ -90,6 +268,140 @@
    },
    "notes": "repo 与发布者待核（todo）；潜在联邦数据源之一。",
    "_file": "entries/plugins/dsh-plugin-hub.yml"
+  },
+  {
+   "kind": "app",
+   "name": "dsh-portable",
+   "description": "DeepSeek Harness 便携构建：免安装分发形态。",
+   "install": "见仓库 Releases",
+   "source": {
+    "repo": "https://github.com/WSL043/DSH-Portable",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2219"
+   },
+   "publisher": {
+    "github": "WSL043"
+   },
+   "securityNotes": "非官方重打包构建——供应链风险高于官方 npm 渠道（参考 ClawHub 假安装器攻击面），校验来源后再用。",
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/dsh-portable.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-tool-diagnose",
+   "description": "模型可用的 diagnose 工具 + 可扩展 ctx.diagnostics 检查注册表：进程内直读 Cordis 运行时状态做症状诊断（对比静态 Skill 方案的动态取证路线）。",
+   "install": "github:xu-kai-quan/dsh-tool-diagnose",
+   "source": {
+    "repo": "https://github.com/xu-kai-quan/dsh-tool-diagnose",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2220"
+   },
+   "publisher": {
+    "github": "xu-kai-quan"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/dsh-tool-diagnose.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-wechat-mp",
+   "description": "Markdown 进、排好版的公众号草稿出：CSS 逐条内联（编辑器只认 style 属性）、本地图片走微信上传接口换 mmbiz 链接，四个工具含只读渲染。",
+   "install": "dsh-wechat-mp",
+   "source": {
+    "repo": "https://github.com/coolbreezecoin/dsh-wechat-mp",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2240"
+   },
+   "publisher": {
+    "github": "coolbreezecoin"
+   },
+   "securityNotes": "需要微信公众号凭据以调用上传/草稿接口，注意凭据存放位置。",
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/dsh-wechat-mp.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-whale-musume",
+   "description": "纯本地看板娘桌宠：47 张立绘、494 条台词、工作联动（DSH 开跑即进入工作态）、分时问候、互动养成与成就墙；除可选天气外零联网、无遥测。",
+   "install": "见仓库 Releases",
+   "source": {
+    "repo": "https://github.com/Sutera-Diffusus/dsh-whale-musume",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2264"
+   },
+   "publisher": {
+    "github": "Sutera-Diffusus"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/dsh-whale-musume.yml"
+  },
+  {
+   "kind": "app",
+   "name": "moodball-app",
+   "description": "macOS 原生桌宠（SwiftUI，14+）：悬浮呼吸球随 Agent 状态变色（思考绿/工具紫/待授权黄/提问粉/完成青/出错红），可拖动置顶、漫画气泡，配 dsh-moodball-status 使用。",
+   "install": "见仓库 Releases",
+   "source": {
+    "repo": "https://github.com/sundusk/dsh-moodball",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2265"
+   },
+   "publisher": {
+    "github": "sundusk"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/moodball-app.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "quotable",
+   "description": "Codex 桌面式划选引用：勾选任意模型输出成 chip，以独立信封消息（source: plugin、防注入定界）随提问入上下文，原文字节级不变；配会话绑定解读边栏。单会话 5 条、单条 4000 字符。",
+   "install": "github:bjvgukv2584-cmyk/Quotable-DeepSeek-Harness",
+   "source": {
+    "repo": "https://github.com/bjvgukv25842-cmyk/Quotable-DeepSeek-Harness",
+    "npm": null,
+    "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/2235"
+   },
+   "publisher": {
+    "github": "bjvgukv25842-cmyk"
+   },
+   "trust": "unreviewed",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "_file": "entries/plugins/quotable.yml"
   },
   {
    "compose": 1,
@@ -142,14 +454,14 @@
    "kind": "plugin",
    "name": "topology",
    "description": "渲染运行中 dsh 实例的实时插件依赖图（插件=节点、inject=边、服务=枢纽）。 随附第三方插件接入 dsh 的完整指南（三大 gotchas）——hub 客户端插件的施工参考。",
-   "install": "github:todo/topology",
+   "install": "github:qidiai/dsh-contrib-topology",
    "source": {
-    "repo": null,
+    "repo": "https://github.com/qidiai/dsh-contrib-topology",
     "npm": null,
     "discussion": "https://github.com/deepseek-ai/deepseek-harness/discussions/1565"
    },
    "publisher": {
-    "github": null
+    "github": "qidiai"
    },
    "trust": "unreviewed",
    "provenance": {
@@ -158,7 +470,6 @@
     "federatedFrom": null,
     "scanned": false
    },
-   "notes": "discussion 正文中 repo URL 被截断，待进帖核实（todo）。",
    "_file": "entries/plugins/topology.yml"
   }
  ]

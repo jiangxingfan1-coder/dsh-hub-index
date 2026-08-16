@@ -1,0 +1,17 @@
+kind: plugin
+name: dsh-file-upload
+description: Claude 桌面版风格文件上传：回形针+全局拖放、多文件附件卡片、小文本直接入 composer、文档经内置 MarkItDown
+  转 Markdown，零配置。
+install: dsh-file-upload
+source:
+  repo: https://github.com/HongMing-Huang/dsh-file-upload
+  npm: https://www.npmjs.com/package/dsh-file-upload
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2266
+publisher:
+  github: HongMing-Huang
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false

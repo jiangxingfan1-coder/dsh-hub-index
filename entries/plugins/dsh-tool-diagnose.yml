@@ -1,0 +1,17 @@
+kind: plugin
+name: dsh-tool-diagnose
+description: 模型可用的 diagnose 工具 + 可扩展 ctx.diagnostics 检查注册表：进程内直读 Cordis
+  运行时状态做症状诊断（对比静态 Skill 方案的动态取证路线）。
+install: github:xu-kai-quan/dsh-tool-diagnose
+source:
+  repo: https://github.com/xu-kai-quan/dsh-tool-diagnose
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2220
+publisher:
+  github: xu-kai-quan
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false

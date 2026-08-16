@@ -1,0 +1,17 @@
+kind: app
+name: moodball-app
+description: macOS 原生桌宠（SwiftUI，14+）：悬浮呼吸球随 Agent
+  状态变色（思考绿/工具紫/待授权黄/提问粉/完成青/出错红），可拖动置顶、漫画气泡，配 dsh-moodball-status 使用。
+install: 见仓库 Releases
+source:
+  repo: https://github.com/sundusk/dsh-moodball
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/2265
+publisher:
+  github: sundusk
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-16
+  federatedFrom: null
+  scanned: false
