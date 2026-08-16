@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-16T06:50:02.539Z",
+ "generated": "2026-08-16T06:59:56.040Z",
  "entries": [
   {
    "kind": "plugin",
@@ -203,6 +203,29 @@
     "scanned": false
    },
    "_file": "entries/plugins/dsh-full-remote.yml"
+  },
+  {
+   "kind": "plugin",
+   "name": "dsh-hub-panel",
+   "description": "Settings 里的生态商店页（本索引的官方 UI）：搜索/过滤全部条目，信任徽章 + 安全备注 + 复制安装命令。只发现、不代装。Dual-face（host 薄壳 + React client）。",
+   "install": "github:jiangxingfan1-coder/dsh-hub-panel",
+   "source": {
+    "repo": "https://github.com/jiangxingfan1-coder/dsh-hub-panel",
+    "npm": null,
+    "discussion": null
+   },
+   "publisher": {
+    "github": "jiangxingfan1-coder"
+   },
+   "trust": "community",
+   "provenance": {
+    "addedBy": "jiangxingfan1-coder",
+    "addedAt": "2026-08-16",
+    "federatedFrom": null,
+    "scanned": false
+   },
+   "notes": "本索引项目自己的面板——自举条目；trust=community（发布者实名，未经第三方审计，不自评 verified）。",
+   "_file": "entries/plugins/dsh-hub-panel.yml"
   },
   {
    "kind": "app",
