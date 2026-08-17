@@ -1,0 +1,20 @@
+kind: plugin
+name: graph-memory
+description: Deepseek Harness、Openclaw知识图谱记忆插件。2026年4月受邀发布在清华大学讨论会。Knowledge
+  Graph + Memory；Knowledge Graph Context Engine for OpenClaw — extracts
+  structured triples from conversations, compresses context 75%, enables
+  cross-session experience reuse
+install: github:adoresever/graph-memory
+source:
+  repo: https://github.com/adoresever/graph-memory
+  npm: null
+  discussion: null
+publisher:
+  github: adoresever
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★529，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

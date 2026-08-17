@@ -1,0 +1,17 @@
+kind: plugin
+name: learn-harness-engineering
+description: Harness engineering beginner tutorial, from 0 to 1
+install: github:walkinglabs/learn-harness-engineering
+source:
+  repo: https://github.com/walkinglabs/learn-harness-engineering
+  npm: null
+  discussion: null
+publisher:
+  github: walkinglabs
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★11608，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

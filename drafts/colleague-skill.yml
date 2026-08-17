@@ -1,0 +1,18 @@
+kind: plugin
+name: colleague-skill
+description: 将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm
+  skills? It's giving rebirth era. Welcome to Digital Life 1.0. 🫶
+install: github:titanwings/colleague-skill
+source:
+  repo: https://github.com/titanwings/colleague-skill
+  npm: null
+  discussion: null
+publisher:
+  github: titanwings
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★22919，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

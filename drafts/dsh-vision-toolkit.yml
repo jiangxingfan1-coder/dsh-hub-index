@@ -1,0 +1,20 @@
+kind: plugin
+name: dsh-vision-toolkit
+description: "让纯文本模型更好地做视觉任务的DeepSeek Harness插件：带意图的图片问答、长截图 OCR、UI 还原等｜DeepSeek
+  Harness-native integration for agent-vision-toolkit: image Q&A,
+  long-screenshot OCR, UI restoration, grounding, pixel diff, Artifacts, and Web
+  UI."
+install: github:Anionex/dsh-vision-toolkit
+source:
+  repo: https://github.com/Anionex/dsh-vision-toolkit
+  npm: null
+  discussion: null
+publisher:
+  github: Anionex
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★553，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

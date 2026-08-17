@@ -1,0 +1,21 @@
+kind: plugin
+name: echobird
+description: One-click install + model switch:Claude Code,Codex CLI (OpenAI),
+  Grok Build (xAI), DeepSeek Harness, Kimi Code (Moonshot) ,Qwen
+  Code,Aider,OpenCode,MiMo Code (Xiaomi),ZCode
+  (Z.AI),OpenClaw,Pi,OpenScience,Vibe-Trading,Claude Desktop (3P
+  profile),ChatGPT desktop,OpenCode Desktop,
+install: github:edison7009/EchoBird
+source:
+  repo: https://github.com/edison7009/EchoBird
+  npm: null
+  discussion: null
+publisher:
+  github: edison7009
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★3046，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

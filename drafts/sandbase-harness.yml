@@ -1,0 +1,19 @@
+kind: plugin
+name: sandbase-harness
+description: Open-source CMA-compatible agent runtime for any model, with MCP
+  tools, sandboxed sessions, audit, replay, and a local console. Includes a
+  native DeepSeek Harness bundle over stdio MCP.
+install: github:sandbaseai/sandbase-harness
+source:
+  repo: https://github.com/sandbaseai/sandbase-harness
+  npm: null
+  discussion: null
+publisher:
+  github: sandbaseai
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★608，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

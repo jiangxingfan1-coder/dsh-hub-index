@@ -1,0 +1,17 @@
+kind: plugin
+name: working-activity
+description: Lively Working-line extension for pi CLI and DSH
+install: github:ccch1mneyyy/working-activity
+source:
+  repo: https://github.com/ccch1mneyyy/working-activity
+  npm: null
+  discussion: null
+publisher:
+  github: ccch1mneyyy
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★646，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

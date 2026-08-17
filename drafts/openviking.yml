@@ -1,0 +1,18 @@
+kind: plugin
+name: openviking
+description: Self-evolving Context Database for AI Agents. Unify Agent Memory,
+  Knowledge RAG and Skills.
+install: github:volcengine/OpenViking
+source:
+  repo: https://github.com/volcengine/OpenViking
+  npm: null
+  discussion: null
+publisher:
+  github: volcengine
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★28728，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

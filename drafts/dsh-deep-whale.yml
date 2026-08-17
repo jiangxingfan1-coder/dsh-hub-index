@@ -1,0 +1,17 @@
+kind: plugin
+name: dsh-deep-whale
+description: DSH Web 鲸鱼娘皮肤系列(深海女仆工坊 maid-atelier)——CC BY-NC-SA 4.0
+install: github:Small-tailqwq/dsh-deep-whale
+source:
+  repo: https://github.com/Small-tailqwq/dsh-deep-whale
+  npm: null
+  discussion: null
+publisher:
+  github: Small-tailqwq
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★1119，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

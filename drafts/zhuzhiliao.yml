@@ -1,0 +1,17 @@
+kind: plugin
+name: zhuzhiliao
+description: 竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。
+install: github:imsai-sh/zhuzhiliao
+source:
+  repo: https://github.com/imsai-sh/zhuzhiliao
+  npm: null
+  discussion: null
+publisher:
+  github: imsai-sh
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★2833，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

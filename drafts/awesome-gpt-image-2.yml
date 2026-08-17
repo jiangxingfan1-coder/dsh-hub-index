@@ -1,0 +1,18 @@
+kind: plugin
+name: awesome-gpt-image-2
+description: Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+
+  套工业级模板，并提炼出Skills，持续更新中
+install: github:freestylefly/awesome-gpt-image-2
+source:
+  repo: https://github.com/freestylefly/awesome-gpt-image-2
+  npm: null
+  discussion: null
+publisher:
+  github: freestylefly
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★10802，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

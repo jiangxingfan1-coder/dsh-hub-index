@@ -1,0 +1,19 @@
+kind: plugin
+name: yao
+description: ✨ All your agents and workspaces in one place, on every device you
+  own. Track tasks on a board, accessible from desktop, mobile, browser, or API.
+  Self-hosted.
+install: github:YaoApp/yao
+source:
+  repo: https://github.com/YaoApp/yao
+  npm: null
+  discussion: null
+publisher:
+  github: YaoApp
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★7633，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

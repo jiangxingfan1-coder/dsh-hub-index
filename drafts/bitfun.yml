@@ -1,0 +1,19 @@
+kind: plugin
+name: bitfun
+description: BitFun combines a high-performance agent runtime written in Rust
+  with a polished desktop application. It pairs the depth of a Code Agent with
+  open, general-purpose capabilities for work beyond software development.
+install: github:GCWing/BitFun
+source:
+  repo: https://github.com/GCWing/BitFun
+  npm: null
+  discussion: null
+publisher:
+  github: GCWing
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-17
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★1754，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
