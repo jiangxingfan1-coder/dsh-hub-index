@@ -1,0 +1,21 @@
+kind: plugin
+name: "@chenjie1129/dsh-remotion-video-plugin"
+description: "Adds a remotion-video skill to DeepSeek Harness for project inspection, frame-driven React animation, preview checks, and verified Remotion rendering."
+install: github:chenjie1129/remotion-video-plugin
+source:
+  repo: https://github.com/chenjie1129/remotion-video-plugin
+  npm: null
+  discussion: https://github.com/deepseek-ai/deepseek-harness/discussions/3861
+publisher:
+  github: chenjie1129
+trust: unreviewed
+provenance:
+  addedBy: chenjie1129
+  addedAt: 2026-08-21
+  federatedFrom: null
+  verifiedBy: null
+  scanned: false
+  verifiedAt: null
+  reportUrl: https://github.com/chenjie1129/remotion-video-plugin/blob/main/docs/SMOKE_TEST_RESULTS.md
+notes: "Requires Node.js ^22.19.0 or >=24.0.0 and a compatible DeepSeek Harness developer-preview release. The repository includes English and Simplified Chinese documentation plus a reproducible Remotion demo."
+securityNotes: "Instruction-only skill provider: it does not collect telemetry, store credentials, upload media, or contact an external service. Agent video tasks still require a user-configured model provider. Review the source before installation because dsh plugin installation executes packages in the Harness host environment."
