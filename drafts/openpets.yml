@@ -1,0 +1,18 @@
+kind: plugin
+name: openpets
+description: Local first, desktop companion platform with animated pets, plugin
+  SDK and coding-agent integrations.
+install: github:alvinunreal/openpets
+source:
+  repo: https://github.com/alvinunreal/openpets
+  npm: null
+  discussion: null
+publisher:
+  github: alvinunreal
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-24
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★1109，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

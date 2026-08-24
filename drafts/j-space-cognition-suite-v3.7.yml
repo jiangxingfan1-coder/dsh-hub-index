@@ -1,0 +1,19 @@
+kind: plugin
+name: j-space-cognition-suite-v3.7
+description: J-Space Cognition Suite V3.7 - AI cognitive-enhancement Skills
+  based on Anthropic's J-space global workspace research. | 哔哩哔哩：Tiger380 (UID
+  3494375382321675) — https://space.bilibili.com/3494375382321675
+install: github:Tiger3807861189/J-Space-Cognition-Suite-V3.7
+source:
+  repo: https://github.com/Tiger3807861189/J-Space-Cognition-Suite-V3.7
+  npm: null
+  discussion: null
+publisher:
+  github: Tiger3807861189
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-24
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★3011，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

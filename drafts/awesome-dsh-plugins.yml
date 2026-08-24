@@ -1,0 +1,18 @@
+kind: plugin
+name: awesome-dsh-plugins
+description: DSH 插件雷达与精选榜：多路自动发现 9000+ 候选，容器真实安装路径运行级实测（四档判定），精选 Top 50 · 11
+  类人工策展，全量索引 PLUGINS-ALL.md，自动更新。
+install: github:AdamPlatin123/awesome-dsh-plugins
+source:
+  repo: https://github.com/AdamPlatin123/awesome-dsh-plugins
+  npm: null
+  discussion: null
+publisher:
+  github: AdamPlatin123
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-24
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★1360，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
