@@ -1,0 +1,18 @@
+kind: plugin
+name: vox-director
+description: Turn one topic into a finished Vox-style paper-collage explainer/ad
+  video — automated end to end on Atlas Cloud + ffmpeg. An agent skill.
+install: github:Alisa0808/vox-director
+source:
+  repo: https://github.com/Alisa0808/vox-director
+  npm: null
+  discussion: null
+publisher:
+  github: Alisa0808
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-31
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★1663，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

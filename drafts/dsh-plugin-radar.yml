@@ -1,0 +1,18 @@
+kind: plugin
+name: dsh-plugin-radar
+description: DSH Plugin Radar — 开源 DSH 插件生态雷达：自动发现 15900+ 候选、k8s 运行级实测 10000+、15
+  分钟快照管线；插件目录是其自动生成的 artifact
+install: github:AdamPlatin123/dsh-plugin-radar
+source:
+  repo: https://github.com/AdamPlatin123/dsh-plugin-radar
+  npm: null
+  discussion: null
+publisher:
+  github: AdamPlatin123
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-31
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★1434，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

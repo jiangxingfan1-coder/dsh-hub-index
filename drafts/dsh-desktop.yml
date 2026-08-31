@@ -1,0 +1,17 @@
+kind: plugin
+name: dsh-desktop
+description: 为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案。万物皆「插件」，桌面本身也是「插件」。
+install: github:anywhere-labs/dsh-desktop
+source:
+  repo: https://github.com/anywhere-labs/dsh-desktop
+  npm: null
+  discussion: null
+publisher:
+  github: anywhere-labs
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-08-31
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★22298，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
