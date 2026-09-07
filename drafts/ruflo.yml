@@ -1,0 +1,20 @@
+kind: plugin
+name: ruflo
+description: 🌊 The original agent meta-harness. Deploy intelligent multi-player
+  swarms, coordinate autonomous workflows, and build conversational AI systems.
+  Features adaptive memory, self-learning intelligence, RAG integration, and
+  native Claude Code / Codex / Hermes and many more Integrated
+install: github:ruvnet/ruflo
+source:
+  repo: https://github.com/ruvnet/ruflo
+  npm: null
+  discussion: null
+publisher:
+  github: ruvnet
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-09-07
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★71122，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

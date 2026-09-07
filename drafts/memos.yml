@@ -1,0 +1,19 @@
+kind: plugin
+name: memos
+description: "Self-evolving memory OS for LLM & AI Agents: ultra-persistent
+  memory, hybrid-retrieval, and cross-task skill reuse, with 35.24% token
+  savings and DeepSeek Harness support."
+install: github:MemTensor/MemOS
+source:
+  repo: https://github.com/MemTensor/MemOS
+  npm: null
+  discussion: null
+publisher:
+  github: MemTensor
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-09-07
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★11214，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
