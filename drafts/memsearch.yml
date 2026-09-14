@@ -1,0 +1,18 @@
+kind: plugin
+name: memsearch
+description: A persistent, unified memory layer for all your AI agents (e.g.
+  Claude Code, Codex, DSH), backed by Markdown and Milvus.
+install: github:zilliztech/memsearch
+source:
+  repo: https://github.com/zilliztech/memsearch
+  npm: null
+  discussion: null
+publisher:
+  github: zilliztech
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-09-14
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★2599，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

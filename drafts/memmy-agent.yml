@@ -1,0 +1,20 @@
+kind: plugin
+name: memmy-agent
+description: 🍙  A personal AI agent & local memory hub for all AI agents, gives
+  every AI one shared, fully controlled memory and persistent context — all AI
+  remember the same you. Now supports Claude Code, Codex, OpenClaw and Hermes
+  Agent etc.
+install: github:MemTensor/memmy-agent
+source:
+  repo: https://github.com/MemTensor/memmy-agent
+  npm: null
+  discussion: null
+publisher:
+  github: MemTensor
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-09-14
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★1905，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
