@@ -1,0 +1,18 @@
+kind: plugin
+name: deepseek-balance-whale-widget
+description: DeepSeek Harness（DSH）一只住在 DSH
+  界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。QQ弹弹，支持拖拽吸附、左吸附翻转、数字滚动动画，随界面自动启用，建议直接喊来你的dsh安装
+install: github:MeteorNOX/DeepSeek-Balance-Whale-Widget
+source:
+  repo: https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget
+  npm: null
+  discussion: null
+publisher:
+  github: MeteorNOX
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-09-21
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★2838，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

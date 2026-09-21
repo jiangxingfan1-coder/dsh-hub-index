@@ -1,0 +1,18 @@
+kind: plugin
+name: loopx
+description: Long-horizon agent control plane for durable, governed work across
+  Codex, Claude Code, and other harnesses.
+install: github:loopx-project/loopx
+source:
+  repo: https://github.com/loopx-project/loopx
+  npm: null
+  discussion: null
+publisher:
+  github: loopx-project
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-09-21
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★5913，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
