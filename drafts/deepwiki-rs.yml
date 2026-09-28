@@ -1,0 +1,19 @@
+kind: plugin
+name: deepwiki-rs
+description: Turn code into clarity. Generate accurate technical docs and
+  AI-ready context in minutes—perfectly structured for human teams and
+  intelligent agents.
+install: github:sopaco/deepwiki-rs
+source:
+  repo: https://github.com/sopaco/deepwiki-rs
+  npm: null
+  discussion: null
+publisher:
+  github: sopaco
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-09-28
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★3093，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

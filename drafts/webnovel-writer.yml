@@ -1,0 +1,17 @@
+kind: plugin
+name: webnovel-writer
+description: 基于 Claude Code 的长篇网文辅助创作系统，解决 AI 写作中的「遗忘」和「幻觉」问题，支持 200 万字量级 连载创作。
+install: github:lingfengQAQ/webnovel-writer
+source:
+  repo: https://github.com/lingfengQAQ/webnovel-writer
+  npm: null
+  discussion: null
+publisher:
+  github: lingfengQAQ
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-09-28
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★7236，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
