@@ -1,0 +1,20 @@
+kind: plugin
+name: skill
+description: 收录最全、更新最快的技能Skills商店：精选原创技能包（涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流），全部打包好可直接安装使用！同时自动抓取GitHub上万个Skills项目，按分类、更新时间、Star数量整理。The
+  most comprehensive and frequently updated AI Agent skill library, featuring
+  curated skill packs across document processing, content creation, programming,
+  machine learning,
+install: github:anbeime/skill
+source:
+  repo: https://github.com/anbeime/skill
+  npm: null
+  discussion: null
+publisher:
+  github: anbeime
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-10-05
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★7546，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

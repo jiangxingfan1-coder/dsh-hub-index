@@ -1,0 +1,18 @@
+kind: plugin
+name: distilly
+description: Distilly — Distill how they think into reusable Skills for any
+  Agent or Bot. Formerly Colleague Skill（原同事 Skill）.
+install: github:titanwings/distilly
+source:
+  repo: https://github.com/titanwings/distilly
+  npm: null
+  discussion: null
+publisher:
+  github: titanwings
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-10-05
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★25307，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

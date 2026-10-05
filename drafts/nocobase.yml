@@ -1,0 +1,20 @@
+kind: plugin
+name: nocobase
+description: NocoBase is an open-source AI + no-code platform for building
+  business systems fast. Instead of generating everything from scratch, AI works
+  on top of production-proven infrastructure and a WYSIWYG no-code interface, so
+  you get both speed and reliability.
+install: github:nocobase/nocobase
+source:
+  repo: https://github.com/nocobase/nocobase
+  npm: null
+  discussion: null
+publisher:
+  github: nocobase
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-10-05
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★24452，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
