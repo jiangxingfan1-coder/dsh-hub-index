@@ -1,0 +1,18 @@
+kind: plugin
+name: answer-me-with-html
+description: Answer me with HTML — an agent skill that answers hard questions
+  with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。
+install: github:QingYunA/answer-me-with-html
+source:
+  repo: https://github.com/QingYunA/answer-me-with-html
+  npm: null
+  discussion: null
+publisher:
+  github: QingYunA
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-10-19
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★3768，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

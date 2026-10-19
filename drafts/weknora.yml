@@ -1,0 +1,18 @@
+kind: plugin
+name: weknora
+description: "Open-source LLM knowledge platform: turn raw documents into a
+  queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki."
+install: github:Tencent/WeKnora
+source:
+  repo: https://github.com/Tencent/WeKnora
+  npm: null
+  discussion: null
+publisher:
+  github: Tencent
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-10-19
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★34677，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

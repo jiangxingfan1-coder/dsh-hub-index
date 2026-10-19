@@ -1,0 +1,19 @@
+kind: plugin
+name: echobird
+description: Manage ChatGPT, Codex CLI, and Claude Code accounts and track quota
+  in one place. Use multi-model smart routing with priority and automatic
+  failover. Install AI tools and deploy local LLMs in one click.
+install: github:edison7009/EchoBird
+source:
+  repo: https://github.com/edison7009/EchoBird
+  npm: null
+  discussion: null
+publisher:
+  github: edison7009
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-10-19
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★3369，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

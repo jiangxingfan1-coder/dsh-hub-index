@@ -1,0 +1,18 @@
+kind: plugin
+name: dsh-ops
+description: A toolkit for low-level operations in DSH, designed to reduce token
+  usage and task execution time / DSH 底层操作工具插件，旨在减少 Token 消耗与任务耗时
+install: github:T-Auto/dsh-ops
+source:
+  repo: https://github.com/T-Auto/dsh-ops
+  npm: null
+  discussion: null
+publisher:
+  github: T-Auto
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-10-19
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★3163，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
