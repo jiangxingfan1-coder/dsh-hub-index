@@ -1,0 +1,21 @@
+kind: plugin
+name: dsh-context
+description: The best DeepSeek Harness plugin for context insight and
+  management, with context dashboard / browser / sidebar and context command,
+  for context statistics, composition, breakdown, evolution details, agent
+  teams, understanding how the context is made of, and how it evolves. 一站式
+  DeepSeek Ha
+install: github:bowenliang123/dsh-context
+source:
+  repo: https://github.com/bowenliang123/dsh-context
+  npm: null
+  discussion: null
+publisher:
+  github: bowenliang123
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-10-26
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★3610，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

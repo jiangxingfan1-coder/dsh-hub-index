@@ -1,0 +1,19 @@
+kind: plugin
+name: dsh-web
+description: DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSeek
+  Harness (DSH) Web Plugin Aggregation Ecosystem · Everything is a plugin,
+  distributed via the Creative Workshop
+install: github:zhu1090093659/dsh-web
+source:
+  repo: https://github.com/zhu1090093659/dsh-web
+  npm: null
+  discussion: null
+publisher:
+  github: zhu1090093659
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-10-26
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★9542，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

@@ -1,0 +1,19 @@
+kind: plugin
+name: skillhub
+description: Self-hosted, open-source agent skill registry for enterprises.
+  Publish & version skill packages, govern with RBAC and audit logs,
+  deploy   on-premise with Docker or Kubernetes.
+install: github:iflytek/skillhub
+source:
+  repo: https://github.com/iflytek/skillhub
+  npm: null
+  discussion: null
+publisher:
+  github: iflytek
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-10-26
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★5295，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

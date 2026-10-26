@@ -1,0 +1,17 @@
+kind: plugin
+name: dsh-pet
+description: DSH 桌面宠物：一行命令装好即用的透明动画小桌宠，支持多开、大小位置随心配置；还内置 DIY 素材链，能用 AI 视频自造专属宠物
+install: github:PC2005-cloud/dsh-pet
+source:
+  repo: https://github.com/PC2005-cloud/dsh-pet
+  npm: null
+  discussion: null
+publisher:
+  github: PC2005-cloud
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-10-26
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★4211，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

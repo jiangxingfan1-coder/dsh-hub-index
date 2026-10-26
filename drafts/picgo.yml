@@ -1,0 +1,19 @@
+kind: plugin
+name: picgo
+description: ":rocket: The Ultimate Image Uploader for Efficient Creators.
+  Supports Obsidian, Typora, VS Code etc. and 60+ image hosting services  (S3,
+  GitHub, Cloudflare R2, Imgur, Aliyun OSS...). Paste, upload, done."
+install: github:Molunerfinn/PicGo
+source:
+  repo: https://github.com/Molunerfinn/PicGo
+  npm: null
+  discussion: null
+publisher:
+  github: Molunerfinn
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-10-26
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★27413，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
