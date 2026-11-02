@@ -1,0 +1,20 @@
+kind: plugin
+name: baoyu-design
+description: Run Claude Design locally as an Agent Skill — Cursor, Codex,
+  DeepSeek Harness & more. Produce polished UI mockups, prototypes, decks &
+  wireframes as self-contained HTML, without claude.ai/design. Best with Opus or
+  Claude.
+install: github:JimLiu/baoyu-design
+source:
+  repo: https://github.com/JimLiu/baoyu-design
+  npm: null
+  discussion: null
+publisher:
+  github: JimLiu
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-11-02
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★5853，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
