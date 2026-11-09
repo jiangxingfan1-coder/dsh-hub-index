@@ -1,0 +1,17 @@
+kind: plugin
+name: aitoearn
+description: Let's use AI to Earn!
+install: github:yikart/AiToEarn
+source:
+  repo: https://github.com/yikart/AiToEarn
+  npm: null
+  discussion: null
+publisher:
+  github: yikart
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-11-09
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★27520，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

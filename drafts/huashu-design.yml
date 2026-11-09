@@ -1,0 +1,19 @@
+kind: plugin
+name: huashu-design
+description: Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX /
+  动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design
+  skill for Claude Code, Codex, Cursor & any agent
+install: github:alchaincyf/huashu-design
+source:
+  repo: https://github.com/alchaincyf/huashu-design
+  npm: null
+  discussion: null
+publisher:
+  github: alchaincyf
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-11-09
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★29028，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
