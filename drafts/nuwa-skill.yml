@@ -1,0 +1,17 @@
+kind: plugin
+name: nuwa-skill
+description: 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.
+install: github:alchaincyf/nuwa-skill
+source:
+  repo: https://github.com/alchaincyf/nuwa-skill
+  npm: null
+  discussion: null
+publisher:
+  github: alchaincyf
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-11-16
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★38393，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

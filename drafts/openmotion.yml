@@ -1,0 +1,20 @@
+kind: plugin
+name: openmotion
+description: The open-source Claude Motion & CapCut alternative. Turn a
+  reference video into editable motion graphics with your own brand kit and
+  copy. OpenMotion is a full-stack agentic video studio with 300+ Motion.md
+  guides and support for 22 agents, including Claude Code, Codex, and WorkBuddy.
+install: github:nexu-io/openmotion
+source:
+  repo: https://github.com/nexu-io/openmotion
+  npm: null
+  discussion: null
+publisher:
+  github: nexu-io
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-11-16
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★10020，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/

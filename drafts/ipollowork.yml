@@ -1,0 +1,20 @@
+kind: plugin
+name: ipollowork
+description: An enterprise collaboration platform for people and multi-agent
+  teams, built on the open-source DeepSeek Harness. Shared projects, plugins and
+  Skills, integrated messaging, and editable code, documents, presentations,
+  design, websites and video.
+install: github:Devin-AXIS/iPolloWork
+source:
+  repo: https://github.com/Devin-AXIS/iPolloWork
+  npm: null
+  discussion: null
+publisher:
+  github: Devin-AXIS
+trust: unreviewed
+provenance:
+  addedBy: jiangxingfan1-coder
+  addedAt: 2026-11-16
+  federatedFrom: github-topic-crawl
+  scanned: false
+notes: 爬取自 topic:dsh-plugin（★7478，星数仅记录不进信任面）；人工核对 kind/install/描述后移入 entries/
